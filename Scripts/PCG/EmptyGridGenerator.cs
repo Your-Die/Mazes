@@ -1,8 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Chinchillada.Generation.Mazes
 {
-    public class EmptyGridGenerator : IterativeGeneratorComponent<GridGraph>
+    [Serializable]
+    public class EmptyGridGenerator : GeneratorBase<GridGraph>
     {
         [SerializeField] private int width;
         [SerializeField] private int height;
