@@ -2,14 +2,15 @@
   "name": "com.chinchillada.mazes",
   "version": "1.0.0",
   "displayName": "Chinchillada Mazes",
-  "description": "",
   "unity": "2020.1",
   "unityRelease": "6f1",
   "dependencies": {
-  "com.chinchillada.foundation" : "1.0.0",
-  "com.chinchillada.distributions" : "1.0.0",
-  "com.chinchillada.pcg" : "1.0.0",
-  "com.chinchillada.grid" : "1.0.0"
+    "com.chinchillada.foundation": "1.0.0",
+    "com.chinchillada.distributions": "1.0.0",
+    "com.chinchillada.pcg": "1.0.0",
+    "com.chinchillada.grid": "1.0.0",
+    "com.chinchillada.pcg.graph": "1.0.0",
+    "com.github.siccity.xnode": "1.8.0"
   },
   "keywords": [],
   "author": {

@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 
 namespace Chinchillada.Generation.Mazes
 {
+    [Serializable]
     public class GridGraph : IGraph, IEnumerable<GridNode>
     {
         private readonly GridNode[,] nodes;

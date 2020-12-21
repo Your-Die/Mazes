@@ -42,6 +42,12 @@ namespace Chinchillada.Generation.Mazes
             }
         }
 
+        public bool HasNeighbor(Direction direction)
+        {
+            var neighbor = this.GetNeighbor(direction);
+            return neighbor != null;
+        }
+
         public IEnumerable<IGraphNode> Connections
         {
             get
