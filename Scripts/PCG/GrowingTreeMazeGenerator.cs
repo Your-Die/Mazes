@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Chinchillada.Generation.Mazes
 {
-    public class GrowingTreeMazeGenerator : IterativeGeneratorComponent<GridGraph>
+    public class GrowingTreeMazeGenerator : AsyncGeneratorComponentBase<GridGraph>
     {
         [SerializeField] private int width;
 

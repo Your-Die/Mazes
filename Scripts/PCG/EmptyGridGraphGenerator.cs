@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Chinchillada.Generation.Mazes
 {
     [Serializable]
-    public class EmptyGridGenerator : GeneratorBase<GridGraph>
+    public class EmptyGridGraphGenerator : GeneratorBase<GridGraph>
     {
         [SerializeField] private int width;
         [SerializeField] private int height;
