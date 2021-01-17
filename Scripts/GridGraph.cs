@@ -30,10 +30,10 @@ namespace Chinchillada.Generation.Mazes
                 this.nodes[x, y] = new GridNode(x, y);
         }
 
-        public GridNode ChooseRandomNode()
+        public GridNode ChooseRandomNode(IRNG random)
         {
-            var x = Random.Range(0, this.Width);
-            var y = Random.Range(0, this.Height);
+            var x = random.Range(0, this.Width);
+            var y = random.Range(0, this.Height);
 
             return this[x, y];
         }

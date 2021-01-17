@@ -58,6 +58,8 @@ namespace Chinchillada.Generation.Mazes
     {
         [SerializeField] private Dictionary<INodeSelector, int> selectors = new Dictionary<INodeSelector, int>();
 
+        [SerializeField] private IRNG random;
+        
         private IWeightedDistribution<INodeSelector> distribution;
             
         public GridNode SelectNode(IList<GridNode> nodes)
@@ -65,7 +67,7 @@ namespace Chinchillada.Generation.Mazes
             if (this.distribution == null) 
                 this.BuildDistribution();
 
-            var selector = this.distribution.Sample();
+            var selector = this.distribution.Sample(random);
             return selector.SelectNode(nodes);
         }
 

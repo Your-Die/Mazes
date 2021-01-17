@@ -24,7 +24,7 @@ namespace Chinchillada.Generation.Mazes
             var visitLookup = new bool[this.width, this.height];
             var frontier = new List<GridNode>();
 
-            var startNode = grid.ChooseRandomNode();
+            var startNode = grid.ChooseRandomNode(this.Random);
             AddToFrontier(startNode);
 
             while (frontier.Any())
@@ -51,7 +51,7 @@ namespace Chinchillada.Generation.Mazes
         {
             successor = null;
             
-            var directions = EnumHelper.RandomValuesDistinct<Direction>();
+            var directions = EnumHelper.GetValues<Direction>().RandomOrder();
             foreach (var direction in directions)
             {
                 // Check if not already connected.
