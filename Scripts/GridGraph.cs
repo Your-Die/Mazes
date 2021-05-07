@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using Chinchillada.Foundation;
+using Chinchillada;
 using Random = UnityEngine.Random;
 
 namespace Chinchillada.Generation.Mazes
